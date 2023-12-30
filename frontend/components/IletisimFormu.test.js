@@ -38,7 +38,7 @@ test("kullanıcı doğru ad ve soyad girdiğinde ama email girmediğinde BİR ha
   render(<IletisimFormu />);
 
   const kullaniciAdi = screen.getByLabelText("Ad*");
-  userEvent.type(kullaniciAdi, "");
+  userEvent.type(kullaniciAdi, "Yunus");
 
   const kullaniciSoyadi = screen.getByLabelText("Soyad*");
   userEvent.type(kullaniciSoyadi, "Akyüz");
